@@ -1,100 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Murali Portfolio</title>
-    <link rel="stylesheet" href="port.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Murali Krishnan — Java Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="port.css" />
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header id="navbar">
-    <h2>Murali Krishnan</h2>
-    <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about-section">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">MK<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-<!-- HOME -->
-<section id="home" class="hero">
-    <div class="hero-text">
-        <h1>Hi, I'm Murali Krishnan</h1>
-        <h3>Java Full Stack Developer</h3>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#home" class="menu-link">Home</a>
+  <a href="#about" class="menu-link">About</a>
+  <a href="#projects" class="menu-link">Projects</a>
+  <a href="#education" class="menu-link">Education</a>
+  <a href="#contact" class="menu-link">Contact</a>
+</div>
 
-        <p>
-            Aspiring Java Full Stack Developer with a strong interest in backend technologies.
-            Passionate about building real-world applications and improving problem-solving skills.
-        </p>
-
-        <div class="buttons">
-            <a href="https://github.com/Murali18-L" target="_blank" class="btn">GitHub</a>
-            <a href="Murali_Krishnan_Resume.pdf" download class="btn">Download CV</a>
-        </div>
-    </div>
+<!-- HERO -->
+<section id="home">
+  <div class="hero-tag">Available for opportunities</div>
+  <h1 class="hero-title">
+    Murali Krishnan<br>
+    <span class="line2">Full Stack Dev</span>
+  </h1>
+  <p class="hero-sub">
+    Java Full Stack Developer with a strong foundation in Spring Boot, RESTful APIs,
+    and MySQL. Passionate about building scalable, real-world applications with clean code.
+  </p>
+  <div class="hero-btns">
+    <a href="https://github.com/Murali18-L" target="_blank" class="btn-primary">View GitHub →</a>
+    <a href="Murali_Krishnan_Resume.pdf" download class="btn-outline">Download CV</a>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    scroll to explore
+  </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about-section">
-    <h2>About Me</h2>
-
-    <p>
-        I am an Electronics and Communication Engineering graduate with a strong passion for software development.
-        Currently learning Java Full Stack technologies including Java, Spring Boot, SQL, HTML, CSS, and JavaScript.
-    </p>
-
-    <p>
-        I enjoy solving real-world problems and continuously improving my technical skills.
-        I am a self-motivated learner and actively seeking an opportunity to start my career in the IT industry.
-    </p>
-
-    <p><strong>Skills:</strong> Java | Spring Boot | SQL | JavaScript</p>
+<section id="about">
+  <div class="reveal">
+    <div class="section-label">Who I am</div>
+    <h2 class="section-title">About Me</h2>
+    <div class="section-divider"></div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm an Electronics and Communication Engineering graduate with a deep passion
+          for software development. I have trained extensively in Java Full Stack development
+          at JSPiders, Bengaluru, covering Java, Spring Boot, RESTful APIs, and MySQL.
+        </p>
+        <p>
+          I enjoy solving real-world problems through code and building applications
+          that are both scalable and maintainable. I follow clean architecture practices
+          like layered MVC structure, proper exception handling, and API design.
+        </p>
+        <p>
+          I'm a self-motivated learner actively seeking my first opportunity in the IT industry
+          where I can contribute and grow rapidly.
+        </p>
+        <div class="skills-grid">
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">Spring Boot</span>
+          <span class="skill-pill">Spring MVC</span>
+          <span class="skill-pill">RESTful APIs</span>
+          <span class="skill-pill">MySQL</span>
+          <span class="skill-pill">JDBC</span>
+          <span class="skill-pill">Hibernate / JPA</span>
+          <span class="skill-pill">Maven</span>
+          <span class="skill-pill">Git & GitHub</span>
+          <span class="skill-pill">Postman</span>
+          <span class="skill-pill">HTML5</span>
+          <span class="skill-pill">CSS3</span>
+          <span class="skill-pill">JavaScript</span>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">7.5</div>
+          <div class="stat-label">CGPA — B.E. ECE</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">Real-World Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">6+</div>
+          <div class="stat-label">JPA Entity Classes</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Drive to Learn</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-    <h2>Projects</h2>
+  <div class="reveal">
+    <div class="section-label">What I've built</div>
+    <h2 class="section-title">Projects</h2>
+    <div class="section-divider"></div>
+    <div class="projects-grid">
 
-    <div class="project-container">
-
-        <div class="project-card">
-            <h3>Food Ordering System</h3>
-            <p>
-                Developed a full-stack food ordering application using Spring Boot.
-                Implemented user authentication, menu browsing, order placement, and database integration.
-            </p>
-            <p><strong>Technologies:</strong> Java, Spring Boot, MySQL</p>
-            <a href="#" class="btn">GitHub</a>
+      <div class="project-card">
+        <div class="project-icon">🍽️</div>
+        <h3>Food Ordering System</h3>
+        <p>
+          A full-stack food ordering backend built with Spring Boot and MySQL. Features
+          RESTful APIs for customers, menu items, and orders. Implements 6+ JPA entity
+          classes with proper One-to-Many and Many-to-One relationships, full CRUD,
+          global exception handling, and layered MVC architecture.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">Spring Boot</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">JPA/Hibernate</span>
+          <span class="tech-tag">Postman</span>
         </div>
+        <a href="https://github.com/Murali18-L" target="_blank" class="project-link">
+          View on GitHub <span>→</span>
+        </a>
+      </div>
 
-        <div class="project-card">
-            <h3>Wireless Monitoring System</h3>
-            <p>
-                Built an IoT-based monitoring system using Blynk to track real-time sensor data.
-                Enabled remote monitoring and alerts.
-            </p>
-            <p><strong>Technologies:</strong> Arduino, IoT</p>
-            <a href="#" class="btn">GitHub</a>
+      <div class="project-card">
+        <div class="project-icon">📡</div>
+        <h3>Wireless Monitoring System</h3>
+        <p>
+          An IoT-based real-time monitoring solution using ESP32/NodeMCU and the Blynk
+          cloud platform. Enables remote sensor tracking, control, and automated alert
+          notifications, reducing the need for manual intervention significantly.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">ESP32</span>
+          <span class="tech-tag">Blynk</span>
+          <span class="tech-tag">Arduino</span>
+          <span class="tech-tag">IoT</span>
         </div>
+        <a href="https://github.com/Murali18-L" target="_blank" class="project-link">
+          View on GitHub <span>→</span>
+        </a>
+      </div>
 
     </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="reveal">
+    <div class="section-label">My journey</div>
+    <h2 class="section-title">Education & Training</h2>
+    <div class="section-divider"></div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-year">2024 — Present</div>
+          <div class="timeline-title">Java Full Stack Development Training</div>
+          <div class="timeline-sub">JSPiders, Bengaluru · Java, Spring Boot, RESTful APIs, MySQL, HTML/CSS/JS</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-year">2021 — 2025</div>
+          <div class="timeline-title">B.E. Electronics & Communication Engineering</div>
+          <div class="timeline-sub">AVS Engineering College · CGPA: 7.5</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-year">2019 — 2021</div>
+          <div class="timeline-title">Higher Secondary Certificate (HSC)</div>
+          <div class="timeline-sub">GHSS, Chinthamaniyur · 72%</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-    <h2>Contact</h2>
+  <div class="reveal">
+    <div class="section-label">Let's connect</div>
+    <h2 class="section-title">Contact</h2>
+    <div class="section-divider"></div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>
+          I'm actively looking for entry-level Java Full Stack Developer roles.
+          Feel free to reach out — I'd love to discuss opportunities or just have a chat.
+        </p>
 
-    <p>Email: muralilakshmanan7@gmail.com</p>
-    <p>Phone: 9360042450</p>
+        <a href="mailto:muralilakshmanan7@gmail.com" class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value">muralilakshmanan7@gmail.com</div>
+          </div>
+        </a>
 
-    <div class="contact-links">
-        <a href="https://github.com/Murali18-L" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/muralikrishnan18/" target="_blank">LinkedIn</a>
+        <a href="tel:+919360042450" class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-value">+91 93600 42450</div>
+          </div>
+        </a>
+
+        <a class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-value">Salem, Tamil Nadu</div>
+          </div>
+        </a>
+
+        <div class="social-row">
+          <a href="https://github.com/Murali18-L" target="_blank" class="social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/muralikrishnan18/" target="_blank" class="social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-cta">
+        <h3>Open to Work 🚀</h3>
+        <p>
+          I'm a fresher with hands-on project experience and strong fundamentals in Java Full Stack.
+          I'm looking for entry-level roles where I can contribute from day one and grow quickly.
+          Let's build something great together.
+        </p>
+        <a href="Murali_Krishnan_Resume.pdf" download class="btn-primary" style="display:inline-block">
+          Download Resume →
+        </a>
+      </div>
     </div>
+  </div>
 </section>
 
+<!-- FOOTER -->
+<footer>
+  <p>Designed & Built by <strong>Murali Krishnan L</strong> · Salem, Tamil Nadu · 2025</p>
+</footer>
+
+<script src="port.js"></script>
 </body>
 </html>
